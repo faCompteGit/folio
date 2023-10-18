@@ -102,6 +102,8 @@ export class AppComponent {
 
     
 
+    
+
   }
 
   
@@ -111,8 +113,35 @@ export class AppComponent {
 
 
   
+  ngOnInit(){
 
+    var currentTime = new Date();
+    if(currentTime.getHours()<=1 &&currentTime.getHours()<=13){
+      document.getElementById("bjr")!.innerHTML="Bojour";
+
+    }
+    else{
+      document.getElementById("bjr")!.innerHTML="Bonsoir";
+
+    }
+    //  let nav = document.getElementById("nav")!.offsetTop;
+    //  let n = document.getElementById("li");
+  
+    //  console.log("x", nav);
+    //  if(nav==window.scrollY{
+    //   n!.style.color="red";
+    //  }
+  
+  //    if(window.pageXOffset >= poition){
+  //       nav!.classList.add("sticky")
+  //    }
+  //    else{
+  //     nav!.classList.remove("sticky")
+  //  }
+      
+    }
 
 
 
 }
+

@@ -1,6 +1,10 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html{
+    scroll-behavior: smooth;
 }
 
 .slider::-webkit-scrollbar {
@@ -44,11 +48,11 @@
 }
 .closeMenufixed{
     top: 49%;
-    opacity: 0 ;
+    visibility: hidden;
     transition: 1s;
 }
 .closeMenufixedone{
-    opacity: 0 ;
+    visibility: hidden;
 }
 
 .hideMenu{
@@ -2916,6 +2920,10 @@ fa-icon.ng-fa-icon.iconfooter {
 /***************************************************************************************************************/
 
 @media only screen   and ( max-width:320px)  and (min-width:282px)  {
+
+    .fixed {
+        width: 94%;
+    }
 
     div.divflex {
         gap: 28px;
