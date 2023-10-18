@@ -440,7 +440,7 @@ legend#web {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url("./assets/bgCV.jpg");
+    background-image: url("/assets/bgcv.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
