@@ -1,0 +1,3185 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+  }
+
+
+  /*functions*/
+  .openMenu{
+    top: 85%;
+    transition: 2s;
+}
+
+
+.openMenufixed{
+    top: 100%;
+    opacity: 100;
+    transition: 2s;
+}
+/* 
+
+@keyframes opfixmenu {
+    0%{
+        top: 85%;
+        opacity: 0;
+    }
+    50%{
+        top: 90%;
+        opacity: 0.3;
+    }
+    100%{
+        top: 100%;
+        opacity: 1;
+    }
+    
+} */
+
+.closeMenu{
+    top: -249%;
+    transition: 2s;
+}
+.closeMenufixed{
+    top: 49%;
+    opacity: 0 ;
+    transition: 1s;
+}
+.closeMenufixedone{
+    opacity: 0 ;
+}
+
+.hideMenu{
+    visibility: visible;
+}
+.hideMenufixed{
+    visibility: visible;
+}
+.hidenMenufixed{
+    visibility: hidden;
+}
+
+.iconmenu.hideMenu {
+    right: 0;
+}
+.iconmenu.hidenMenu {
+    right: 0;
+}
+
+.iconmenu.hideMenufixed {
+    right: 0;
+}
+.iconmenu.hidenMenufixed {
+    right: 0;
+}
+
+.hidenMenu{
+    visibility: hidden;
+}
+
+.fixed{
+    position: fixed;
+    top: 0px;
+    transition: 1s linear;
+    width: 99%;
+    z-index: 1000;
+}
+
+.nofixed{
+    position: relative;
+    transition: 0.2s linear;
+}
+
+
+/*styles global*/
+
+h1,h2,h3{
+    color: white;
+}
+
+h1{
+    font-family: Anton;
+    text-wrap: nowrap;
+}
+
+h2{
+    font-family: 'Gloock';
+}
+h3{
+    font-family: 'caveat';
+}
+fa-icon.ng-fa-icon {
+    color: white;
+}
+a {
+    text-decoration: none;
+    font-family: 'caveat';
+    color: white;
+}
+
+.titres{
+    color: black;
+    margin-bottom: 90px;
+}
+
+span.spanforma.date {
+    font-weight: 700;
+    font-family: 'Anton';
+}
+
+span.spanforma.diplome {
+    font-weight: 700;
+    font-family: 'Anton';
+    text-shadow: 2px 0 white, -2px 0 white, 0 2px white, 0 -2px white, 1px 1px white, -1px -1px white, 1px -1px white, -1px 1px white;
+}
+
+span.spanforma.ecole {
+    font-weight: 700;
+    font-family: 'Anton';
+    font-style: italic;
+}
+
+footer > i {
+    color: white;
+}
+
+
+/*header*/
+
+.container-global {
+    background-color: #191970;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+div.divemoabsolute {
+    position: absolute;
+    width: 87%;
+    height: 100px;
+}
+
+div#divemoabsolute1 {
+    opacity: 0.5;
+    top: 21%;
+}
+
+.noms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.rectancle {
+    border: solid 6px;
+    display: flex;
+    align-items: center;
+}
+
+div.divflex {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 123px;
+}
+
+div#divemoabsolute2 {
+    opacity: 0.5;
+    bottom: 27%;
+}
+
+.carre {
+    border: solid 3px white;
+    z-index: 0;
+    background-color: crimson;
+    opacity: 0.5;
+    width: 26px;
+    animation: rota 10s;
+    height: 26px;
+}
+
+img#emoOrdi {
+    width: 60px;
+    height: 44px;
+}
+
+.triangle {
+    border-width: 20px 40px 20px 20px;
+}
+
+div#tri {
+    width: 0;
+    height: 0;
+    opacity: 0.5;
+    animation: trens 10s infinite;
+    border-left: 54px solid #191970;
+    border-right: 18px solid cyan;
+    border-bottom: 13px solid #191970;
+}
+
+.rond {
+    width: 40px;
+    border-radius: 50%;
+    background-color: darkgoldenrod;
+    z-index: 0;
+    opacity: 0.5;
+    border: solid 3px white;
+    height: 40px;
+    margin-left: 50%;
+}
+
+div.divflex {
+    gap: 255px;
+}
+
+img#emoWeb {
+    width: 51px;
+    height: 50px;
+}
+
+img#emoPhone {
+    width: 103PX;
+    height: 58px;
+}
+
+nav.nav {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px;
+    background-color: rgb(165 165 165);
+    /* position: relative;  */
+    align-items: center;
+}
+
+
+
+ul {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 83%;
+    z-index: -10;
+    box-shadow: 1px 19px 41px gray;
+}
+
+li {
+    padding: 8px;
+    margin: 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+li > a {
+    text-decoration: none;
+    color: black;
+    font-size: 89%;
+    padding: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: 'Gloock';
+    font-weight: 700;
+    text-align: center;
+}
+
+.linav:hover {
+    background-color: lightgray;
+}
+
+.iconmenu{
+    position: absolute;
+    z-index: 10000000;
+    font-size: 38px;
+}
+
+.description {
+    display: flex;
+    align-items: center;
+    margin-top: 33px;
+    position: absolute;
+    z-index: -10000;
+    padding-right: 12px;
+}
+
+.description p {
+    font-size: 207%;
+    text-align: center;
+    font-family: 'caveat';
+}
+
+
+div#forma {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 140px;
+}
+
+.project {
+    width: 91%;
+    height: 200px;
+    margin: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border-radius: 10px;
+}
+
+.project:hover {
+    filter: drop-shadow(2px 4px 6px black);
+    margin-top: 4px;
+    transition: 0.3s linear;
+}
+
+.project > h2 {
+    font-size: 95%;
+    position: absolute;
+    top: 40%;
+    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black, 1px 1px black, 
+                 -1px -1px black, 1px -1px black, -1px 1px black;
+}
+
+#compe {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.fieldcompe {
+    display: flex;
+    flex-direction: column;
+    width: 82%;
+    margin: 10px;
+}
+
+fieldset.field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+legend#web {
+    font-size: 133%;
+    font-family: 'caveat';
+    font-weight: 700;
+    color: gray;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    overflow: hidden;
+    display: contents;
+}
+
+
+.slider {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    width: auto;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    display: flex;
+    align-items: stretch;
+    scroll-snap-type: x mandatory;
+    margin-bottom: 60px;
+    
+}
+
+.slide:hover {
+    cursor: pointer;
+}
+
+
+.slider .slide {
+    flex-shrink: 0;
+    padding: 20px 0 20px 20px;
+    scroll-snap-align: center;
+    overflow: hidden;
+}
+
+.slide:hover {
+    filter: invert(1);
+}
+
+.slider .slide:last-child {
+    padding-right: 20px;
+}
+
+.slider .slide > div {
+   
+    border-radius: 10px;
+    width: 222px;
+    height: 200px; /* exemple */
+    padding: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("/assets/bgCV.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+span#gitProjet {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    width: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 97px;
+    transform: skew(10deg, -8deg);
+}
+
+#lienprojet {
+    text-decoration: none;
+    font-family: 'caveat';
+    color: white;
+}
+
+footer {
+    background-color: black;
+    height: 215px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer >i {
+    color: white;
+    font-size: 128%;
+    font-family: caveat;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+/******************************************Tablettes*****************************************************************/
+/*****************************************2560px********************************************************/
+/***************************************************************************************************************/
+
+@media only screen  and (max-width:2560px) and (min-width:1441px)   {
+
+   
+    .container-global {
+    background-color: #191970;
+    height: 679px;
+    }
+
+    
+    #h2{
+        font-size: 285%;
+        padding-top: 6px;
+    }
+
+    #h3 {
+        font-size: 285%;
+    }
+
+    #h1 {
+        font-size: 449%;
+        letter-spacing: 31px;
+    }
+    div.divemoabsolute {
+        width: 85%;
+        height: 71px;
+    }
+
+    div#divemoabsolute1 {
+        top: 18%;
+    }
+    div#divemoabsolute2{
+        bottom: 24%;
+    }
+
+    div.divflex {
+        gap: 261px;
+    }
+
+   
+
+    .carre{
+        width: 43px;
+        height: 36px;
+        margin-top: 2%;
+    }
+
+    img#emoOrdi{
+        width: 63px;
+        height: 53px;   
+        margin-top: 1%;
+    }
+
+    div#tri {
+        border-right: 32px solid cyan;
+        border-bottom: 27px solid #191970;
+    }
+
+    img#emoPhone{
+        width: 99px;
+        height: 63px;
+    }
+
+   
+
+    img#emoWeb{
+        width: 76px;
+        height: 80px;
+        left: 48%;
+        position: absolute;
+    }
+
+    .rond{
+        width: 50px;
+        height: 50px;
+        right: 688px;
+        top: -80%;
+        position: absolute;
+    }
+
+
+    li > a {
+        font-size: 150%;
+    }
+
+
+
+
+   
+
+    
+
+
+    .description p {
+        font-size: 363%;
+    }
+
+
+    .titres {
+        color: black;
+        font-size: 267%;
+        text-align: center;
+        font-family: 'Anton';
+        margin-top: 50px;
+    }
+
+    .titres.compe{
+        margin-top: 439px;
+
+    }
+    .slider .slide > div {
+        width: 609px;
+        height: 340px;
+    }
+
+    span.spanforma.date {
+        font-size: 184%;
+    }
+    
+    span.spanforma.diplome {
+        font-size: 223%;
+    }
+    
+    span.spanforma.ecole {
+        font-size: 167%;
+    }
+
+    fieldset.field{
+        width: 36%;
+    }
+
+    legend#web {
+        font-size: 272%;
+    }
+
+    fieldset>span {
+        font-size: 136%;
+    }
+
+    legend.span{
+        font-size: 127%;
+    }
+
+    .slider {
+        justify-content: center;
+    }
+    
+    
+        
+
+
+
+
+
+    .project {
+        width: 46%;
+        height: 608px;
+        margin: 10px;
+        margin-top: 20px;
+    }
+
+    img.imgProjet {
+        width: 100%;
+        height: 608px;
+        border-radius: 10px;
+        position: absolute;
+    }
+
+    span#gitProjet {
+        width: 172px;
+        margin-top: 292px;
+    }
+
+    #lienprojet {
+        font-size: 179%;
+    }
+
+    
+    .project>h2 {
+        font-size: 189%;
+        position: absolute;
+        top: 40%;
+    }
+
+
+
+}
+
+footer > i {
+    font-size: 325% ;
+}
+
+fa-icon.ng-fa-icon.iconfooter {
+    font-size: 200% ;
+}
+
+
+
+
+                                      /*TABLETTES*/
+/******************************************Tablettes*****************************************************************/
+/*****************************************1440px********************************************************/
+/***************************************************************************************************************/
+
+@media only screen  and (max-width:1440px) and (min-width:1367px)  {
+
+   
+    #h2{
+        font-size: 237%;
+        padding-top: 17px;
+    }
+
+    #h3 {
+        font-size: 199%;
+    }
+
+    #h1 {
+        font-size: 377%;
+        letter-spacing: 16px;
+    }
+
+
+    div.divflex{
+        gap: 160px;
+    }
+
+    div.divemoabsolute {
+        width: 93%;
+        height: 58px;
+    }
+
+    div#divemoabsolute1 {
+        top: 15%;
+    }
+    div#divemoabsolute2{
+        bottom: 19%;
+    }
+
+    .carre{
+        width: 36px;
+        height: 32px;
+        margin-top: 3%;
+    }
+
+    img#emoOrdi{
+        width: 58px;
+        height: 47px;   
+        margin-top: 1%;
+    }
+
+    div#tri {
+        border-right: 26px solid cyan;
+        border-bottom: 22px solid #191970;
+    }
+
+    img#emoPhone{
+        width: 86PX;
+        height: 52px;
+    }
+
+   
+
+    img#emoWeb{
+        width: 60px;
+        height: 55px;
+        left: 46%;
+        position: absolute;
+    }
+
+    .rond{
+        width: 50px;
+        height: 50px;
+        right: 327px;
+        top: -82%;
+        position: absolute;
+    }
+
+
+
+
+   
+
+    .description p {
+        font-size: 261%;
+    }
+
+
+    .titres {
+        color: black;
+        font-size: 189%;
+        text-align: center;
+        font-family: 'Anton';
+        margin-top: 50px;
+    }
+
+    .titres.compe{
+        margin-top: 357px;
+    }
+    .slider .slide > div {
+        width: 483px;
+        height: 247px;
+    }
+
+    span.spanforma.date {
+        font-size: 134%;
+    }
+    
+    span.spanforma.diplome {
+        font-size: 166%;
+    }
+    
+    span.spanforma.ecole {
+        font-size: 143%;
+    }
+
+    fieldset.field{
+        width: 47%;
+    }
+
+    legend#web {
+        font-size: 193%;
+    }
+
+    legend.span{
+        font-size: 127%;
+    }
+    
+    
+        
+
+
+
+
+
+    .project {
+        width: 48%;
+        height: 400px;
+        margin: 10px;
+        margin-top: 20px;
+    }
+
+    img.imgProjet {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+        position: absolute;
+    }
+
+    span#gitProjet {
+        width: 123px;
+        margin-top: 203px;
+    }
+
+    #lienprojet {
+        font-size: 117%;
+    }
+
+    
+    .project>h2 {
+        font-size: 147%;
+        position: absolute;
+        top: 40%;
+    }
+
+
+    img.imgProjet {
+        width: 100%;
+        height: 400px;
+        border-radius: 10px;
+        position: absolute;
+    }
+
+
+}
+
+footer > i {
+    color: white;
+    font-size: 183%;
+}
+
+fa-icon.ng-fa-icon.iconfooter {
+    font-size: 126%;
+}
+
+
+
+
+
+
+
+
+
+
+
+                                           /*TABLETTES*/
+/******************************************Tablettes*****************************************************************/
+/*****************************************1366px********************************************************/
+/***************************************************************************************************************/
+
+@media only screen  and (max-width:1366px) and (min-width:1025px)  {
+
+   
+
+    
+    #h2{
+        font-size: 285%;
+        padding-top: 6px;
+    }
+
+    #h3 {
+        font-size: 285%;
+    }
+
+    #h1 {
+        font-size: 449%;
+        letter-spacing: 31px;
+    }
+    div.divemoabsolute {
+        width: 85%;
+        height: 71px;
+    }
+
+    div#divemoabsolute1 {
+        top: 13%;
+    }
+    div#divemoabsolute2{
+        bottom: 15%;
+    }
+
+    .carre{
+        width: 43px;
+        height: 36px;
+        margin-top: 2%;
+    }
+
+    img#emoOrdi{
+        width: 63px;
+        height: 53px;   
+        margin-top: 1%;
+    }
+
+    div#tri {
+        border-right: 32px solid cyan;
+        border-bottom: 27px solid #191970;
+    }
+
+    img#emoPhone{
+        width: 99px;
+        height: 63px;
+    }
+
+   
+
+    img#emoWeb{
+        width: 76px;
+        height: 80px;
+        left: 46%;
+        position: absolute;
+    }
+
+    .rond{
+        width: 50px;
+        height: 50px;
+        right: 179px;
+        top: -89%;
+        position: absolute;
+    }
+
+
+
+
+
+
+   
+
+    
+
+
+    .description p {
+        font-size: 291%;
+    }
+
+
+    .titres {
+        color: black;
+        font-size: 189%;
+        text-align: center;
+        font-family: 'Anton';
+        margin-top: 50px;
+    }
+
+    .titres.compe{
+        margin-top: 439px;
+
+    }
+    .slider .slide > div {
+        width: 483px;
+        height: 247px;
+    }
+
+    span.spanforma.date {
+        font-size: 134%;
+    }
+    
+    span.spanforma.diplome {
+        font-size: 166%;
+    }
+    
+    span.spanforma.ecole {
+        font-size: 143%;
+    }
+
+    fieldset.field{
+        width: 47%;
+    }
+
+    legend#web {
+        font-size: 193%;
+    }
+
+    legend.span{
+        font-size: 127%;
+    }
+    
+    
+        
+
+
+
+
+
+    .project {
+        width: 48%;
+        height: 400px;
+        margin: 10px;
+        margin-top: 20px;
+    }
+
+    img.imgProjet {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+        position: absolute;
+    }
+
+    span#gitProjet {
+        width: 85px;
+        margin-top: 186px;
+    }
+
+    #lienprojet {
+        font-size: 80%;
+    }
+
+    
+    .project>h2 {
+        font-size: 95%;
+        position: absolute;
+        top: 40%;
+    }
+
+    img.imgProjet {
+        width: 100%;
+        height: 400px;
+        border-radius: 10px;
+        position: absolute;
+    }
+
+
+}
+
+footer > i {
+    color: white;
+    font-size: 183%;
+}
+
+fa-icon.ng-fa-icon.iconfooter {
+    font-size: 126%;
+}
+
+
+
+
+
+
+     
+                                           /*TABLETTES*/
+/******************************************Tablettes*****************************************************************/
+/*****************************************1024px********************************************************/
+/***************************************************************************************************************/
+
+@media only screen  and (max-width:1024px) and (min-width:912px) {
+
+    
+    #h2{
+        font-size: 237%;
+        padding-top: 17px;
+    }
+
+    #h3 {
+        font-size: 199%;
+    }
+
+    #h1 {
+        font-size: 377%;
+        letter-spacing: 16px;
+    }
+
+
+    div.divflex{
+        gap: 160px;
+    }
+
+    div.divemoabsolute {
+        width: 93%;
+        height: 58px;
+    }
+
+    div#divemoabsolute1 {
+        top: 18%;
+    }
+    div#divemoabsolute2{
+        bottom: 19%;
+    }
+
+    .carre{
+        width: 36px;
+        height: 32px;
+        margin-top: 3%;
+    }
+
+    img#emoOrdi{
+        width: 58px;
+        height: 47px;   
+        margin-top: 1%;
+    }
+
+    div#tri {
+        border-right: 26px solid cyan;
+        border-bottom: 22px solid #191970;
+    }
+
+    img#emoPhone{
+        width: 86PX;
+        height: 52px;
+    }
+
+   
+
+    img#emoWeb{
+        width: 60px;
+        height: 55px;
+        left: 46%;
+        position: absolute;
+    }
+
+    .rond{
+        width: 50px;
+        height: 50px;
+        right: 132px;
+        top: -92%;
+        position: absolute;
+    }
+
+
+
+
+    
+    
+
+
+    .description p {
+        font-size: 261%;
+    }
+
+
+    .titres {
+        color: black;
+        font-size: 189%;
+        text-align: center;
+        font-family: 'Anton';
+        margin-top: 50px;
+    }
+
+    .titres.compe{
+        margin-top: 454px;
+    }
+    .slider .slide > div {
+        width: 483px;
+        height: 247px;
+    }
+
+    span.spanforma.date {
+        font-size: 134%;
+    }
+    
+    span.spanforma.diplome {
+        font-size: 166%;
+    }
+    
+    span.spanforma.ecole {
+        font-size: 143%;
+    }
+
+    fieldset.field{
+        width: 47%;
+    }
+
+    legend#web {
+        font-size: 193%;
+    }
+
+    legend.span{
+        font-size: 127%;
+    }
+    
+    
+        
+
+
+
+
+
+    .project {
+        width: 91%;
+        height: 400px;
+        margin: 10px;
+        margin-top: 20px;
+    }
+
+    img.imgProjet {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+        position: absolute;
+    }
+
+    span#gitProjet {
+        width: 123px;
+        margin-top: 203px;
+    }
+
+    #lienprojet {
+        font-size: 117%;
+    }
+
+    
+    .project>h2 {
+        font-size: 147%;
+        position: absolute;
+        top: 40%;
+    }
+
+
+    img.imgProjet {
+        width: 100%;
+        height: 400px;
+        border-radius: 10px;
+        position: absolute;
+    }
+
+
+}
+
+footer > i {
+    color: white;
+    font-size: 183%;
+}
+
+fa-icon.ng-fa-icon.iconfooter {
+    font-size: 126%;
+}
+
+
+
+
+
+
+                                           /*TABLETTES*/
+/******************************************Tablettes*****************************************************************/
+/*****************************************912px********************************************************/
+/***************************************************************************************************************/
+
+@media only screen  and (max-width:912px) and (min-width:821px)  {
+    #h2{
+        font-size: 237%;
+        padding-top: 17px;
+    }
+
+    #h3 {
+        font-size: 199%;
+    }
+
+    #h1 {
+        font-size: 377%;
+        letter-spacing: 16px;
+    }
+
+
+    div.divflex{
+        gap: 160px;
+    }
+
+    div.divemoabsolute {
+        width: 93%;
+        height: 58px;
+    }
+
+    div#divemoabsolute1 {
+        top: 18%;
+    }
+    div#divemoabsolute2{
+        bottom: 19%;
+    }
+
+    .carre{
+        width: 36px;
+        height: 32px;
+        margin-top: 3%;
+    }
+
+    img#emoOrdi{
+        width: 58px;
+        height: 47px;   
+        margin-top: 1%;
+    }
+
+    div#tri {
+        border-right: 26px solid cyan;
+        border-bottom: 22px solid #191970;
+    }
+
+    img#emoPhone{
+        width: 86PX;
+        height: 52px;
+    }
+
+   
+
+    img#emoWeb{
+        width: 60px;
+        height: 55px;
+        left: 46%;
+        position: absolute;
+    }
+
+    .rond{
+        width: 50px;
+        height: 50px;
+        right: 78px;
+        top: -88%;
+        position: absolute;
+    }
+
+
+
+
+  
+
+
+    .description p {
+        font-size: 261%;
+    }
+
+
+    .titres {
+        color: black;
+        font-size: 189%;
+        text-align: center;
+        font-family: 'Anton';
+        margin-top: 50px;
+    }
+
+    .titres.compe{
+        margin-top: 454px;
+    }
+    .slider .slide > div {
+        width: 483px;
+        height: 247px;
+    }
+
+    span.spanforma.date {
+        font-size: 134%;
+    }
+    
+    span.spanforma.diplome {
+        font-size: 166%;
+    }
+    
+    span.spanforma.ecole {
+        font-size: 143%;
+    }
+
+    fieldset.field{
+        width: 47%;
+    }
+
+    legend#web {
+        font-size: 193%;
+    }
+
+    legend.span{
+        font-size: 127%;
+    }
+    
+    
+        
+
+
+
+
+
+    .project {
+        width: 91%;
+        height: 400px;
+        margin: 10px;
+        margin-top: 20px;
+    }
+
+    img.imgProjet {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+        position: absolute;
+    }
+
+    span#gitProjet {
+        width: 123px;
+        margin-top: 203px;
+    }
+
+    #lienprojet {
+        font-size: 117%;
+    }
+
+    
+    .project>h2 {
+        font-size: 147%;
+        position: absolute;
+        top: 40%;
+    }
+
+
+    img.imgProjet {
+        width: 100%;
+        height: 400px;
+        border-radius: 10px;
+        position: absolute;
+    }
+
+
+}
+
+footer > i {
+    color: white;
+    font-size: 183%;
+}
+
+fa-icon.ng-fa-icon.iconfooter {
+    font-size: 126%;
+}
+
+
+
+
+
+
+                                            /*TABLETTES*/
+/******************************************Tablettes*****************************************************************/
+/*****************************************820px********************************************************/
+/***************************************************************************************************************/
+
+@media only screen  and (max-width:820px) and (min-width:769px)  {
+
+    #h2{
+        font-size: 237%;
+        padding-top: 17px;
+    }
+
+    #h3 {
+        font-size: 199%;
+    }
+
+    #h1 {
+        font-size: 377%;
+        letter-spacing: 16px;
+    }
+
+
+    div.divflex{
+        gap: 160px;
+    }
+
+    div.divemoabsolute {
+        width: 93%;
+        height: 58px;
+    }
+
+    div#divemoabsolute1 {
+        top: 18%;
+    }
+    div#divemoabsolute2{
+        bottom: 19%;
+    }
+
+    .carre{
+        width: 36px;
+        height: 32px;
+        margin-top: 3%;
+    }
+
+    img#emoOrdi{
+        width: 58px;
+        height: 47px;   
+        margin-top: 1%;
+    }
+
+    div#tri {
+        border-right: 26px solid cyan;
+        border-bottom: 22px solid #191970;
+    }
+
+    img#emoPhone{
+        width: 86PX;
+        height: 52px;
+    }
+
+   
+
+    img#emoWeb{
+        width: 60px;
+        height: 55px;
+        left: 46%;
+        position: absolute;
+    }
+
+    .rond{
+        width: 50px;
+        height: 50px;
+        right: 38px;
+        top: -88%;
+        position: absolute;
+    }
+
+
+
+
+    
+    
+
+
+    .description p {
+        font-size: 261%;
+    }
+
+
+    .titres {
+        color: black;
+        font-size: 189%;
+        text-align: center;
+        font-family: 'Anton';
+        margin-top: 50px;
+    }
+
+    .titres.compe{
+        margin-top: 454px;
+    }
+    .slider .slide > div {
+        width: 483px;
+        height: 247px;
+    }
+
+    span.spanforma.date {
+        font-size: 134%;
+    }
+    
+    span.spanforma.diplome {
+        font-size: 166%;
+    }
+    
+    span.spanforma.ecole {
+        font-size: 143%;
+    }
+
+    fieldset.field{
+        width: 47%;
+    }
+
+    legend#web {
+        font-size: 193%;
+    }
+
+    legend.span{
+        font-size: 127%;
+    }
+    
+    
+        
+
+
+
+
+
+    .project {
+        width: 91%;
+        height: 400px;
+        margin: 10px;
+        margin-top: 20px;
+    }
+
+    img.imgProjet {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+        position: absolute;
+    }
+
+    span#gitProjet {
+        width: 123px;
+        margin-top: 203px;
+    }
+
+    #lienprojet {
+        font-size: 117%;
+    }
+
+    
+    .project>h2 {
+        font-size: 147%;
+        position: absolute;
+        top: 40%;
+    }
+
+
+    img.imgProjet {
+        width: 100%;
+        height: 400px;
+        border-radius: 10px;
+        position: absolute;
+    }
+
+
+}
+
+footer > i {
+    color: white;
+    font-size: 183%;
+}
+
+fa-icon.ng-fa-icon.iconfooter {
+    font-size: 126%;
+}
+
+
+
+
+
+                                            /*TABLETTES*/
+/******************************************Tablettes*****************************************************************/
+/*****************************************768px********************************************************/
+/***************************************************************************************************************/
+
+@media only screen  and (max-width:768px) and (min-width:751px)  {
+
+    #h2{
+        font-size: 194%;
+        padding-top: 6px;
+    }
+
+    #h3 {
+        font-size: 158%;
+    }
+
+    #h1 {
+        font-size: 377%;
+        letter-spacing: 9px;
+    }
+
+    .description p {
+        font-size: 251%;
+    }
+
+    div.divflex {
+        gap: 120px;
+    }
+
+    div.divemoabsolute {
+        width: 84%;
+        height: 58px;
+    }
+
+    div#divemoabsolute1 {
+        top: 20%;
+    }
+    div#divemoabsolute2{
+        bottom: 21%;
+    }
+
+    .carre{
+        width: 36px;
+        height: 32px;
+        margin-top: 3%;
+    }
+
+    img#emoOrdi{
+        width: 58px;
+        height: 47px;   
+        margin-top: 1%;
+    }
+
+    div#tri {
+        border-right: 26px solid cyan;
+        border-bottom: 22px solid #191970;
+    }
+
+    img#emoPhone{
+        width: 86PX;
+        height: 52px;
+    }
+
+   
+
+    img#emoWeb{
+        width: 60px;
+        height: 55px;
+        left: 46%;
+        position: absolute;
+    }
+
+    .rond{
+        width: 50px;
+        height: 50px;
+        right: 26px;
+        top: -77%;
+        position: absolute;
+    }
+
+
+    
+
+    
+
+    .titres {
+        color: black;
+        font-size: 178%;
+        text-align: center; 
+    }
+
+    .titres.compe{
+        margin-top: 452px;
+    }
+    .slider .slide > div {
+        width: 483px;
+        height: 247px;
+    }
+
+    span.spanforma.date {
+        font-size: 134%;
+    }
+    
+    span.spanforma.diplome {
+        font-size: 166%;
+    }
+    
+    span.spanforma.ecole {
+        font-size: 143%;
+    }
+
+    fieldset.field{
+        width: 46%;
+    }
+    
+    
+        
+
+
+
+
+
+    .project {
+        width: 91%;
+        height: 400px;
+        margin: 10px;
+        margin-top: 20px;
+    }
+
+    img.imgProjet {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+        position: absolute;
+    }
+
+    span#gitProjet {
+        width: 123px;
+        margin-top: 203px;
+    }
+
+    #lienprojet {
+        font-size: 117%;
+    }
+
+    
+    .project>h2 {
+        font-size: 147%;
+        position: absolute;
+        top: 40%;
+    }
+
+    img.imgProjet {
+        width: 100%;
+        height: 400px;
+        border-radius: 10px;
+        position: absolute;
+    }
+
+
+}
+
+footer > i {
+    color: white;
+    font-size: 183%;
+}
+
+fa-icon.ng-fa-icon.iconfooter {
+    font-size: 126%;
+}
+
+
+
+
+
+                                         /*Mobiles*/
+/******************************************Mobile*****************************************************************/
+/*****************************************750px********************************************************/
+/***************************************************************************************************************/
+
+@media only screen and (max-width:750px)  and (min-width:541px)  {
+
+    #h1 {
+        font-size: 301%;
+        letter-spacing: 7px;
+    }
+
+    div.divflex {
+        gap: 89px;
+    }
+
+    div.divemoabsolute {
+        width: 100%;
+    }
+
+    span.spanforma.date {
+        font-size: 134%;
+    }
+    
+    span.spanforma.diplome {
+        font-size: 166%;
+    }
+    
+    span.spanforma.ecole {
+        font-size: 143%;
+    }
+
+    .rond{
+        width: 30px;
+        height: 30px;
+        right: 121px;
+        top: -30%;
+        position: absolute;
+    }
+
+
+
+
+
+    
+  
+
+    div#divemoabsolute1 {
+        top: 26%;
+    }
+    div#divemoabsolute2{
+        bottom: 17%;
+    }
+
+    .carre{
+        width: 25px;
+        height: 25px;
+        margin-top: 3%;
+    }
+
+    img#emoOrdi{
+        width: 41px;
+        height: 33px;   
+        margin-top: 1%;
+    }
+
+    div#tri {
+        border-right: 21px solid cyan;
+        border-bottom: 19px solid #191970;
+    }
+
+    img#emoPhone{
+        width: 81PX;
+        height: 44px;
+    }
+
+   
+
+    img#emoWeb{
+        width: 42px;
+        height: 42px;
+        left: 47%;
+        position: absolute;
+    }
+
+   
+
+
+    
+    
+
+    .titres {
+        color: black;
+        font-size: 185%;
+        text-align: center; 
+    }
+
+    .titres.compe{
+        margin-top: 480px;
+    }
+    .slider .slide > div {
+        width: 483px;
+        height: 247px;
+    }
+
+ 
+    
+    
+   
+    
+        
+
+
+
+
+
+    .project {
+        width: 91%;
+        height: 316px;
+        margin: 10px;
+        margin-top: 20px;
+    }
+
+    img.imgProjet {
+        width: 100%;
+        height: 316px;
+        border-radius: 10px;
+        position: absolute;
+    }
+
+    span#gitProjet {
+        width: 85px;
+        margin-top: 152px;
+    }
+
+    #lienprojet {
+        font-size: 80%;
+    }
+
+    
+    .project>h2 {
+        font-size: 95%;
+        position: absolute;
+        top: 40%;
+    }
+
+
+    
+
+
+}
+
+
+
+
+
+
+                                         /*Mobiles*/
+/******************************************Mobile*****************************************************************/
+/*****************************************540px********************************************************/
+/***************************************************************************************************************/
+
+@media only screen  and (max-width:540px) and (min-width:426px)  {
+
+    
+    #h2 {
+        font-size: 148%;
+        padding-top: 6px;
+    }
+
+    #h3 {
+        font-size: 129%;
+    }
+
+
+    #h1 {
+        font-size: 281%;
+        letter-spacing: 9px;
+    }
+
+    div.divflex {
+        gap: 89px;
+    }
+    
+    div.divemoabsolute {
+        width: 94%;
+        height: 49px;
+    }
+
+    div#divemoabsolute1 {
+        top: 26%;
+    }
+    div#divemoabsolute2{
+        bottom: 28%;
+    }
+
+    .carre{
+        width: 25px;
+        height: 25px;
+        margin-top: 3%;
+    }
+
+    img#emoOrdi{
+        width: 41px;
+        height: 33px;   
+        margin-top: 1%;
+    }
+
+    div#tri {
+        border-right: 21px solid cyan;
+        border-bottom: 19px solid #191970;
+    }
+
+    img#emoPhone{
+        width: 81PX;
+        height: 44px;
+    }
+
+   
+
+    img#emoWeb{
+        width: 42px;
+        height: 42px;
+        left: 47%;
+        position: absolute;
+    }
+
+    .rond{
+        width: 30px;
+        height: 30px;
+        right: 34px;
+        top: -64%;
+        position: absolute;
+    }
+
+
+
+    
+    
+
+    .titres {
+        color: black;
+        font-size: 124%;
+        text-align: center; 
+    }
+
+    .titres.compe{
+        margin-top: 480px;
+    }
+    .slider .slide > div {
+        width: 483px;
+        height: 247px;
+    }
+
+    span.spanforma.date {
+        font-size: 134%;
+    }
+    
+    span.spanforma.diplome {
+        font-size: 166%;
+    }
+    
+    span.spanforma.ecole {
+        font-size: 143%;
+    }
+    
+    
+        
+
+
+
+
+
+    .project {
+        width: 91%;
+        height: 200px;
+        margin: 10px;
+        margin-top: 20px;
+    }
+
+    img.imgProjet {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+        position: absolute;
+    }
+
+    span#gitProjet {
+        width: 85px;
+        margin-top: 106px;
+    }
+
+    #lienprojet {
+        font-size: 80%;
+    }
+
+    
+    .project>h2 {
+        font-size: 95%;
+        position: absolute;
+        top: 40%;
+    }
+
+
+}
+
+
+
+/******************************************Mobile*****************************************************************/
+/*****************************************425px********************************************************/
+/***************************************************************************************************************/
+
+@media only screen   and ( max-width:425px)  and (min-width:415px)  {
+
+   
+
+    div.divflex {
+        gap: 55px;
+    }
+
+    .rond {
+        width: 30px;
+        height: 30px;
+        right: -13px;
+        top: -74%;
+        position: absolute;
+    }
+
+    .titres.compe{
+        margin-top: 666px;
+    }
+
+    fieldset.field{
+        width: 92%;
+    }
+
+    .slider.slide> div{
+        width: 382px;
+        height: 247px;
+    }
+
+
+
+
+
+    #h2 {
+        font-size: 118%;
+        padding-top: 6px;
+    }
+
+    #h3 {
+        font-size: 110%;
+    }
+
+
+    #h1 {
+        font-size: 216%;;
+        letter-spacing: 2px;
+    }
+
+    
+    .rectancle {
+        height: 65px;
+    }
+
+    div.divemoabsolute {
+        width: 94%;
+        height: 49px;
+    }
+
+    div#divemoabsolute1 {
+        top: 28%;
+    }
+    div#divemoabsolute2{
+        bottom: 28%;
+    }
+
+    .carre{
+        width: 21px;
+        height: 21px;
+        margin-top: 17px;
+    }
+
+    img#emoOrdi{
+        width: 34px;
+        height: 28px;
+        margin-top: 4px;
+    }
+
+    img#emoPhone{
+        width: 81PX;
+        height: 44px;
+    }
+
+   
+
+    img#emoWeb{
+        width: 36px;
+        height: 36px;
+        left: 46%;
+        position: absolute;
+    }
+
+    
+
+
+
+
+
+
+
+    
+
+    
+
+    .titres {
+        color: black;
+        font-size: 165%;
+        text-align: center;
+    }
+
+    
+
+   
+    .slider .slide > div {
+        width: 359px;
+    }
+
+    span.spanforma.date {
+        font-size: 113%;
+    }
+    
+    span.spanforma.diplome {
+        font-size: 128%;
+    }
+    
+    span.spanforma.ecole {
+        font-size: 110%;
+    }
+
+
+
+
+
+    .project {
+        width: 91%;
+        height: 200px;
+        margin: 10px;
+        margin-top: 20px;
+    }
+
+    img.imgProjet {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+        position: absolute;
+    }
+
+    span#gitProjet {
+        width: 85px;
+        margin-top: 106px;
+    }
+
+    #lienprojet {
+        font-size: 80%;
+    }
+
+    
+    .project>h2 {
+        font-size: 95%;
+        position: absolute;
+        top: 40%;
+    }
+
+
+}
+
+
+
+
+
+
+/******************************************Mobile*****************************************************************/
+/*****************************************414px********************************************************/
+/***************************************************************************************************************/
+
+@media only screen  and (max-width:414px) and (min-width:391px)  {
+
+    #h2 {
+        font-size: 118%;
+        padding-top: 6px;
+    }
+
+    #h3 {
+        font-size: 110%;
+    }
+
+
+    #h1 {
+        font-size: 281%;;
+        letter-spacing: 2px;
+    }
+
+    div.divflex {
+        gap: 52px;
+    }
+    .rectancle {
+        height: 65px;
+    }
+
+    div.divemoabsolute {
+        width: 94%;
+        height: 49px;
+    }
+
+    div#divemoabsolute1 {
+        top: 28%;
+    }
+    div#divemoabsolute2{
+        bottom: 28%;
+    }
+
+    .carre{
+        width: 21px;
+        height: 21px;
+        margin-top: 17px;
+    }
+
+    img#emoOrdi{
+        width: 34px;
+        height: 28px;
+        margin-top: 4px;
+    }
+
+    img#emoPhone{
+        width: 81PX;
+        height: 44px;
+    }
+
+   
+
+    img#emoWeb{
+        width: 36px;
+        height: 36px;
+        left: 46%;
+        position: absolute;
+    }
+
+    .rond{
+        width: 30px;
+        height: 30px;
+        right: 16px;
+        top: -64%;
+        position: absolute;
+    }
+
+
+
+
+
+
+
+    
+
+    
+
+    .titres {
+        color: black;
+        font-size: 165%;
+        text-align: center;
+    }
+
+    .titres.compe{
+        margin-top: 687px;
+    }
+
+    fieldset.field{
+        width: 90%;
+    }
+    .slider .slide > div {
+        width: 359px;
+    }
+
+    span.spanforma.date {
+        font-size: 113%;
+    }
+    
+    span.spanforma.diplome {
+        font-size: 128%;
+    }
+    
+    span.spanforma.ecole {
+        font-size: 110%;
+    }
+
+
+
+
+
+    .project {
+        width: 91%;
+        height: 200px;
+        margin: 10px;
+        margin-top: 20px;
+    }
+
+    img.imgProjet {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+        position: absolute;
+    }
+
+    span#gitProjet {
+        width: 85px;
+        margin-top: 106px;
+    }
+
+    #lienprojet {
+        font-size: 80%;
+    }
+
+    
+    .project>h2 {
+        font-size: 95%;
+        position: absolute;
+        top: 40%;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+/******************************************Mobile*****************************************************************/
+/*****************************************390px********************************************************/
+/***************************************************************************************************************/
+
+@media only screen  and (max-width:390px) and (min-width:376px)  {
+
+
+    #h2 {
+        font-size: 102%;
+        padding-top: 6px;
+    }
+
+    #h3 {
+        font-size: 103%;
+    }
+
+
+    #h1 {
+        font-size: 281%;;
+        letter-spacing: 2px;
+    }
+
+    div.divflex {
+        gap: 52px;
+    }
+    .rectancle {
+        height: 65px;
+    }
+
+
+
+
+
+   
+
+    div.divemoabsolute {
+        width: 99%;
+        height: 49px;
+    }
+
+    div#divemoabsolute1 {
+        top: 29%;
+    }
+    div#divemoabsolute2{
+        bottom: 28%;
+    }
+
+    .carre{
+        width: 21px;
+        height: 21px;
+        margin-top: 17px;
+    }
+
+    img#emoOrdi{
+        width: 34px;
+        height: 28px;
+        margin-top: 4px;
+    }
+
+    img#emoPhone{
+        width: 81PX;
+        height: 44px;
+    }
+
+   
+
+    img#emoWeb{
+        width: 36px;
+        height: 36px;
+        left: 43%;
+        position: absolute;
+    }
+
+    .rond{
+        width: 30px;
+        height: 30px;
+        right: 30px;
+        top: -64%;
+        position: absolute;
+    }
+
+
+
+
+
+
+    
+
+
+    .titres {
+        color: black;
+        font-size: 152%;
+        text-align: center;
+    }
+
+    .titres.compe{
+        margin-top: 611px;
+    }
+
+    fieldset.field {
+        width: 90%;
+    }
+
+    .slider .slide > div {
+        width: 301px;
+    }
+
+
+
+
+
+    .project {
+        width: 91%;
+        height: 200px;
+        margin: 10px;
+        margin-top: 20px;
+    }
+
+    img.imgProjet {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+        position: absolute;
+    }
+
+    span#gitProjet {
+        width: 106px;
+        margin-top: 111px;
+    }
+
+    #lienprojet {
+        font-size: 100%;
+    }
+
+    
+    .project>h2 {
+        font-size: 112%;
+        position: absolute;
+        top: 40%;
+    }
+
+
+}
+
+
+/******************************************Mobile*****************************************************************/
+/*****************************************375px********************************************************/
+/***************************************************************************************************************/
+
+@media only screen  and (max-width:375px) and (min-width:361px ) {
+
+    #h2 {
+        font-size: 102%;
+        padding-top: 6px;
+    }
+
+    #h3 {
+        font-size: 103%;
+    }
+
+    #h1 {
+        font-size: 258%;
+        letter-spacing: 2px;
+    }
+
+    .rectancle {
+        height: 63px;
+    }
+
+
+
+
+
+   
+
+    div.divemoabsolute {
+        width: 99%;
+        height: 49px;
+    }
+
+    div#divemoabsolute1 {
+        top: 29%;
+    }
+    div#divemoabsolute2{
+        bottom: 28%;
+    }
+
+    div.divflex{
+        gap: 47px;
+    }
+
+    .carre{
+        width: 21px;
+        height: 21px;
+        margin-top: 17px;
+    }
+
+    img#emoOrdi{
+        width: 34px;
+        height: 28px;
+        margin-top: 4px;
+    }
+
+    img#emoPhone{
+        width: 81PX;
+        height: 44px;
+    }
+
+   
+
+    img#emoWeb{
+        width: 36px;
+        height: 36px;
+        left: 43%;
+        position: absolute;
+    }
+
+    .rond{
+        width: 30px;
+        height: 30px;
+        right: 29px;
+        top: -59%;
+        position: absolute;
+    }
+
+
+
+
+
+    
+
+    .titres {
+        color: black;
+        font-size: 124%;
+        text-align: center;
+    }
+
+    .titres.compe{
+        margin-top: 622px;
+    }
+
+    fieldset.field {
+        width: 97%;
+    }
+    .slider .slide > div {
+        width: 301px;
+    }
+
+
+
+
+
+    .project {
+        width: 91%;
+        height: 200px;
+        margin: 10px;
+        margin-top: 20px;
+    }
+
+    img.imgProjet {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+        position: absolute;
+    }
+
+    span#gitProjet {
+        width: 85px;
+        margin-top: 106px;
+    }
+
+    #lienprojet {
+        font-size: 80%;
+    }
+
+    
+    .project>h2 {
+        font-size: 95%;
+        position: absolute;
+        top: 40%;
+    }
+
+
+}
+
+
+
+
+/******************************************Mobile*****************************************************************/
+/*****************************************360px********************************************************/
+/***************************************************************************************************************/
+
+@media only screen   and ( max-width:360px)  and (min-width:321px)  {
+
+    #h1 {
+        font-size: 227%;
+        letter-spacing: 3px;
+    }
+
+    #h2 {
+        font-size: 102%;
+        padding-top: 6px;
+    }
+
+    #h3 {
+        font-size: 103%;
+    }
+
+    .rectancle {
+        height: 58px;
+    }
+
+
+
+
+   
+
+    div.divemoabsolute {
+        width: 99%;
+        height: 49px;
+    }
+
+    div#divemoabsolute1 {
+        top: 29%;
+    }
+    div#divemoabsolute2{
+        bottom: 28%;
+    }
+
+    div.divflex {
+        gap: 40px;
+    }
+
+    .carre{
+        width: 21px;
+        height: 21px;
+        margin-top: 17px;
+    }
+
+    img#emoOrdi{
+        width: 34px;
+        height: 28px;
+        margin-top: 4px;
+    }
+
+    img#emoPhone{
+        width: 81PX;
+        height: 44px;
+    }
+
+   
+
+    img#emoWeb{
+        width: 36px;
+        height: 36px;
+        left: 43%;
+        position: absolute;
+    }
+
+    .rond{
+        width: 30px;
+        height: 30px;
+        right: 23px;
+        top: -68%;
+        position: absolute;
+    }
+
+
+
+
+
+    
+    
+
+    .titres {
+        color: black;
+        font-size: 124%;
+        text-align: center;
+    }
+
+    fieldset.field {
+        width: 87%;
+    }
+
+    .titres.compe {
+        margin-top: 591px;
+    }
+
+    
+    .slider .slide > div {
+        width: 326px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**pas toucher**/
+
+
+
+    
+
+    .project {
+        width: 91%;
+        height: 200px;
+        margin: 10px;
+        margin-top: 20px;
+    }
+
+    img.imgProjet {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+        position: absolute;
+    }
+
+    span#gitProjet {
+        width: 85px;
+        margin-top: 106px;
+    }
+
+    #lienprojet {
+        font-size: 80%;
+    }
+
+    
+    .project>h2 {
+        font-size: 95%;
+        position: absolute;
+        top: 40%;
+    }
+
+    
+
+    .slider .slide > div {
+        width: 281px;
+    }
+
+    
+}
+
+
+
+
+/******************************************Mobile*****************************************************************/
+/*****************************************320px********************************************************/
+/***************************************************************************************************************/
+
+@media only screen   and ( max-width:320px)  and (min-width:282px)  {
+
+    div.divflex {
+        gap: 28px;
+    }
+
+    .rond {
+        width: 30px;
+        height: 30px;
+        right: 1px;
+        top: -74%;
+        position: absolute;
+    }
+
+
+
+    #h2 {
+        font-size: 95%;
+        padding-top: 6px;
+    }
+
+    #h3 {
+        font-size: 95%;
+    }
+
+    #h1 {
+        font-size: 156%;
+        letter-spacing: 4px;
+    }
+
+    .rectancle {
+        height: 48px;
+    }
+
+    
+
+    div.divemoabsolute {
+        width: 99%;
+        height: 49px;
+    }
+
+    div#divemoabsolute1 {
+        top: 31%;
+    }
+    
+
+    .carre{
+        width: 21px;
+        height: 21px;
+        margin-top: 17px;
+    }
+
+    img#emoOrdi{
+        width: 34px;
+        height: 28px;
+        margin-top: 4px;
+    }
+
+    img#emoPhone{
+        width: 81PX;
+        height: 44px;
+    }
+
+    div#divemoabsolute2{
+        bottom: 31%;
+    }
+
+    img#emoWeb{
+        width: 36px;
+        height: 36px;
+        left: 43%;
+        position: absolute;
+    }
+
+   
+
+
+
+    
+
+    .titres {
+        color: black;
+        font-size: 124%;
+        text-align: center;
+    }
+
+    .titres.compe{
+        margin-top: 677px;
+    }
+
+    fieldset.field {
+        width: 83%;
+    }
+
+    .slider .slide > div {
+        width: 227px;
+    }
+    
+
+    .project {
+        width: 91%;
+        height: 200px;
+        margin: 10px;
+        margin-top: 20px;
+    }
+
+    img.imgProjet {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+        position: absolute;
+    }
+
+    span#gitProjet {
+        width: 85px;
+        margin-top: 106px;
+    }
+
+    #lienprojet {
+        font-size: 80%;
+    }
+
+    
+    .project>h2 {
+        font-size: 95%;
+        position: absolute;
+        top: 40%;
+    }
+
+}
+
+
+
+/******************************************Mobile*****************************************************************/
+/*****************************************280px********************************************************/
+/***************************************************************************************************************/
+
+@media screen  and (max-width:280px)  {
+
+    #h2 {
+        font-size: 95%;
+        padding-top: 6px;
+    }
+
+    #h3 {
+        font-size: 95%;
+    }
+
+    #h1 {
+        font-size: 156%;
+        letter-spacing: 4px;
+    }
+
+    .rectancle {
+        height: 48px;
+    }
+
+    
+
+    div.divemoabsolute {
+        width: 99%;
+        height: 49px;
+    }
+
+    div#divemoabsolute1 {
+        top: 31%;
+    }
+    div.divflex {
+        gap: 17px;
+    }
+
+    .carre{
+        width: 21px;
+        height: 21px;
+        margin-top: 17px;
+    }
+
+    img#emoOrdi{
+        width: 34px;
+        height: 28px;
+        margin-top: 4px;
+    }
+
+    img#emoPhone{
+        width: 81PX;
+        height: 44px;
+    }
+
+    div#divemoabsolute2{
+        bottom: 31%;
+    }
+
+    img#emoWeb{
+        width: 36px;
+        height: 36px;
+        left: 43%;
+        position: absolute;
+    }
+
+    .rond{
+        width: 30px;
+        height: 30px;
+        right: 0;
+        top: -30%;
+        position: absolute;
+    }
+
+    .closeMenu{
+        top: -290%;
+    }
+
+
+
+    
+
+    .titres {
+        color: black;
+        font-size: 124%;
+        text-align: center;
+    }
+
+    .titres.compe{
+        margin-top: 764px;
+    }
+
+    fieldset.field {
+        width: 83%;
+    }
+
+    .slider .slide > div {
+        width: 237px;
+    }
+    
+
+    .project {
+        width: 91%;
+        height: 200px;
+        margin: 10px;
+        margin-top: 20px;
+    }
+
+    img.imgProjet {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+        position: absolute;
+    }
+
+    span#gitProjet {
+        width: 85px;
+        margin-top: 106px;
+    }
+
+    #lienprojet {
+        font-size: 80%;
+    }
+
+    
+    .project>h2 {
+        font-size: 95%;
+        position: absolute;
+        top: 40%;
+    }
+
+    
+
+
+}

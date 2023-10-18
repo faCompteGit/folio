@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: Gloock;
+    src: url("src\fonts\Gloock-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: caveat;
+    src: url("src\fonts\Caveat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Anton;
+    src: url("src\fonts\Anton-Regular.ttf") format("truetype");
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
