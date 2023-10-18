@@ -48,11 +48,11 @@ html{
 }
 .closeMenufixed{
     top: 49%;
-    visibility: hidden;
+    opacity: 0 ;
     transition: 1s;
 }
 .closeMenufixedone{
-    visibility: hidden;
+    opacity: 0 ;
 }
 
 .hideMenu{
@@ -2921,9 +2921,7 @@ fa-icon.ng-fa-icon.iconfooter {
 
 @media only screen   and ( max-width:320px)  and (min-width:282px)  {
 
-    .fixed {
-        width: 94%;
-    }
+    
 
     div.divflex {
         gap: 28px;
