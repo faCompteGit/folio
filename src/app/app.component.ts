@@ -106,6 +106,19 @@ export class AppComponent {
 
   }
 
+  closenav(){
+
+    this.closeMenu = 'closeMenu';
+    //fermer le menu
+    this.closeMenu = 'closeMenu';
+
+    //masquer l'icon close
+    this.hideMenu ='hideMenu';
+
+    this.hidenMenu = 'hidenMenu';
+
+  }
+
   
 
 
@@ -115,6 +128,7 @@ export class AppComponent {
   
   ngOnInit(){
 
+    
     var currentTime = new Date();
     if(currentTime.getHours()>=1 &&currentTime.getHours()<=13){
       document.getElementById("bjr")!.innerHTML="Bonjour";
@@ -128,9 +142,18 @@ export class AppComponent {
     //  let n = document.getElementById("li");
   
     //  console.log("x", nav);
-    //  if(nav==window.scrollY{
-    //   n!.style.color="red";
-    //  }
+    // if(document.documentElement.scrollTop>1){
+    //   console.log("window.scrollY");
+    //   this.closeMenu = 'closeMenu';
+    //   //fermer le menu
+    //   this.closeMenu = 'closeMenu';
+  
+    //   //masquer l'icon close
+    //   this.hideMenu ='hideMenu';
+  
+    //   this.hidenMenu = 'hidenMenu';
+  
+    // }
   
   //    if(window.pageXOffset >= poition){
   //       nav!.classList.add("sticky")

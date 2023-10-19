@@ -46,9 +46,9 @@
     </div> -->
     
     <ul [ngClass]="[closeMenu]">
-      <li class="linav" ><a href="./#compepe" id="li">Mes compétences</a></li>
-      <li class="linav"><a href="./#formama">Ma Formation</a></li>
-      <li class="linav"><a href="./#project">Mes Projets</a></li>
+      <li class="linav" ><a href="./#compepe" id="li"  (click)="closenav()">Mes compétences</a></li>
+      <li class="linav"><a href="./#formama" (click)="closenav()">Ma Formation</a></li>
+      <li class="linav"><a href="./#project" (click)="closenav()">Mes Projets</a></li>
       <li class="linav"><a href="./assets/cv.pdf" download>Télécharger mon cv</a></li>
     </ul> 
   </nav>
