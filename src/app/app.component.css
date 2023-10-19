@@ -44,15 +44,36 @@ html{
 
 .closeMenu{
     top: -249%;
-    transition: 2s;
+    visibility: hidden;
+    
+    animation: closemenu 2s linear;
 }
+
+@keyframes closemenu {
+    0%{
+        opacity: 80%;
+
+    }
+    50%{
+        opacity: 20%;
+
+    }
+    100%{
+        opacity: 0%;
+        visibility: hidden;
+
+    }
+    
+}
+
+
 .closeMenufixed{
     top: 49%;
-    opacity: 0 ;
-    transition: 1s;
+    visibility: hidden;
+    animation: closemenu 1s linear;
 }
 .closeMenufixedone{
-    opacity: 0 ;
+    visibility: hidden ;
 }
 
 .hideMenu{
