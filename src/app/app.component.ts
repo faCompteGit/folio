@@ -116,8 +116,8 @@ export class AppComponent {
   ngOnInit(){
 
     var currentTime = new Date();
-    if(currentTime.getHours()<=1 &&currentTime.getHours()<=13){
-      document.getElementById("bjr")!.innerHTML="Bojour";
+    if(currentTime.getHours()>=1 &&currentTime.getHours()<=13){
+      document.getElementById("bjr")!.innerHTML="Bonjour";
 
     }
     else{
