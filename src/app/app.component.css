@@ -15,14 +15,31 @@ html{
   /*functions*/
   .openMenu{
     top: 85%;
-    transition: 2s;
+    animation:openmenu 1s linear;
 }
+
+@keyframes openmenu {
+    0%{
+        opacity: 0%;
+
+    }
+    50%{
+        opacity: 80%;
+
+    }
+    100%{
+        opacity: 100%;
+
+    }
+    
+}
+
 
 
 .openMenufixed{
     top: 100%;
     opacity: 100;
-    transition: 2s;
+    animation:openmenu 1s linear;
 }
 /* 
 
@@ -43,7 +60,7 @@ html{
 } */
 
 .closeMenu{
-    top: -249%;
+    top: 89%;
     visibility: hidden;
     
     animation: closemenu 2s linear;
@@ -70,7 +87,7 @@ html{
 .closeMenufixed{
     top: 49%;
     visibility: hidden;
-    animation: closemenu 1s linear;
+    animation: closemenu 2s linear;
 }
 .closeMenufixedone{
     visibility: hidden ;
