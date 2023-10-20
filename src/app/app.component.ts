@@ -5,7 +5,8 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import {  PLATFORM_ID } from '@angular/core';
 import { Inject } from '@angular/core';
-import { isPlatformBrowser } from '@angular/common';
+import  'jquery';
+declare var $:any;
 
 @Component({
   selector: 'app-root',
@@ -30,6 +31,7 @@ export class AppComponent {
   cordesopen= 'cordesopen';
   cordesclose = 'cordeclose';
   navbarfixed:boolean=false;
+  
 
    @HostListener('window:scroll',['$event'])scroll_function()
    {
@@ -138,6 +140,26 @@ export class AppComponent {
       document.getElementById("bjr")!.innerHTML="Bonsoir";
 
     }
+
+     
+     var lastScrollTop=0
+     $(window).on("scroll", () =>{
+       var st = $(document).scrollTop();
+       if(st > lastScrollTop ){
+         console.log("défile bas")
+         this.closeMenu = 'closeMenu';
+        //fermer le menu
+        this.closeMenu = 'closeMenu';
+
+        //masquer l'icon close
+        this.hideMenu ='hideMenu';
+
+        this.hidenMenu = 'hidenMenu';
+       }
+       
+  
+     })
+
     //  let nav = document.getElementById("nav")!.offsetTop;
     //  let n = document.getElementById("li");
   
