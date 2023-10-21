@@ -6,6 +6,8 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import {  PLATFORM_ID } from '@angular/core';
 import { Inject } from '@angular/core';
 import  'jquery';
+import { Subject, delay, filter } from 'rxjs';
+import { ObserveVisibilityDirectiveDirective } from './observe-visibility-directive.directive';
 declare var $:any;
 
 @Component({
@@ -31,6 +33,17 @@ export class AppComponent {
   cordesopen= 'cordesopen';
   cordesclose = 'cordeclose';
   navbarfixed:boolean=false;
+
+  // longList =['a','b','c','d',];
+  
+  // debounceTime="0";
+  // visible=Boolean;
+
+  constructor(){
+
+
+  }
+ 
   
 
    @HostListener('window:scroll',['$event'])scroll_function()
