@@ -3,6 +3,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faAngleDoubleUp } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import {  PLATFORM_ID } from '@angular/core';
 import { Inject } from '@angular/core';
 import  'jquery';
@@ -31,6 +32,7 @@ export class AppComponent {
   faGithub = faGithub;
   faEnvelope =faEnvelope;
   cordesopen= 'cordesopen';
+  faLinkedin=faLinkedin;
   cordesclose = 'cordeclose';
   navbarfixed:boolean=false;
 
