@@ -9,6 +9,7 @@ import { Inject } from '@angular/core';
 import  'jquery';
 import { Subject, delay, filter } from 'rxjs';
 import { ObserveVisibilityDirectiveDirective } from './observe-visibility-directive.directive';
+import * as AOS from 'aos';
 declare var $:any;
 
 @Component({
@@ -144,6 +145,8 @@ export class AppComponent {
 
   
   ngOnInit(){
+
+    AOS.init();
 
     
     var currentTime = new Date();
