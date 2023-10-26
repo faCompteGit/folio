@@ -141,6 +141,11 @@ html{
 
 /*styles global*/
 
+
+fieldset.field.fieldcompe>span {
+    margin: 5px;
+}
+
 h1,h2,h3{
     color: white;
 }
