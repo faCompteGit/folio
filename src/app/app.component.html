@@ -49,15 +49,58 @@
       <li class="linav" ><a href="./#compepe" id="li"  (click)="closenav()">Mes compétences</a></li>
       <li class="linav"><a href="./#formama" (click)="closenav()">Ma Formation</a></li>
       <li class="linav"><a href="./#project" (click)="closenav()">Mes Projets</a></li>
-      <li class="linav"><a href="./assets/cv.pdf" download>Télécharger mon cv</a></li>
+      <li class="linav"><a href="./assets/cv_itsoukiga_friday.pdf" download>Télécharger mon cv</a></li>
     </ul> 
   </nav>
 
   <div class="description" data-aos="fade-up" data-aos-duration="2000">
     <p> <span id="bjr" >Bonjour</span>! Je suis <b>Friday Itsoukiga</b> un développeur full stack junior. Je suis détenteur 
       d'une licence appliquée en informatique, et pour l'instant je finis ma deuxième année master
-    en Génie Logiciel. Donner de soi et apprendre davantage sont deux concepts fondamentaux de ma personne. </p>
+      en Génie Logiciel. Donner de soi et apprendre davantage sont deux concepts fondamentaux de ma personne. </p>
+
   </div>
+
+
+  
+  <!--Nouvelle rubrique vidéo-->
+  <h1 class="titres compe" data-aos="zoom-in" data-aos-duration="2000">Projet En cours <a id="compepe"></a></h1>
+
+  <div class="new_projet">
+
+    <div class="liste_fonctionalite " data-aos="fade-up">
+      <div class="desc">
+        <p id="p_new_projet"> <span><b>ArchiFact</b></span> est une solution de GED pour la gestion de bon de commande, ArchiFact est implémenté avec le lange Python
+          et est basé sur la technologie OCR (Reconnaissance Optique de Caractères).  </p>
+      </div>
+
+      <div class="fonct">
+        <h4>Fonctionnalités implémentées</h4>
+          <span>- Ajout de bon de commande sur un document (document image)</span><br>
+          <span>- Ajout de bon de commande sur plus d'un document </span><br>
+          <span>- Recherche du bon de commande</span><br>
+          <span>- Modification de bon de commande</span>
+          
+        
+
+        <h4>Fonctionalités futures</h4>
+        
+          <span>- Ajout de bon de commande multiple (archivage des ancièns bon de commandes)</span><br>
+          <span>- Ajout de bon de commande pour d'autre support de document (pdf,excel,etc.) </span><br>
+          <span>- Ajout d'un modèl d'apprentissage </span>
+      </div>
+    </div>
+
+    <video width="50%" controls>
+      <source src="./assets/ged_vid.mp4" type="video/mp4">
+      <source src="mov_bbb.ogg" type="video/ogg">
+      Your browser does not support HTML video.
+    </video>
+
+    
+  </div>
+
+
+
 
   <h1 class="titres compe" data-aos="zoom-in" data-aos-duration="2000">Mes compétences <a id="compepe"></a></h1>
 
@@ -132,14 +175,14 @@
 
   <h1 class="titres" data-aos="zoom-in">Mes Projets <a id="project"></a></h1>
 
-  <div class="Compétences formation" id="forma"  data-aos="fade-right" data-aos-duration="2000">
+  <div class="Compétences formation" id="forma"  data-aos="fade-up" data-aos-duration="2000">
     <div class="project" id="" >
       <img class="imgProjet" src="./assets/imageProjetJava.jpg" alt="">
       <h2>Java Réservation vol</h2>
       <span id="gitProjet"><a href="https://github.com/faCompteGit/Gestion-vol/tree/master" target="_blank" id="lienprojet"> Voir sur Github</a> <fa-icon class="iconGit" [icon]="faGithub"></fa-icon></span>
     </div>
 
-    <div class="project formation animate " id="" data-aos="fade-left" data-aos-duration="2000">
+    <div class="project formation animate " id="" data-aos="fade-up" data-aos-duration="2000">
       <img class="imgProjet" src="./assets/imageSoapBackend.jpg" alt="">
       <h2>Python API SOAP/REST</h2>
       <span id="gitProjet"><a href="https://github.com/faCompteGit/Soap-api/tree/master" target="_blank" id="lienprojet"> Voir sur Github</a> <fa-icon class="iconGit"  [icon]="faGithub"></fa-icon></span>

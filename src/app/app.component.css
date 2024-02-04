@@ -12,6 +12,53 @@ html{
   }
 
 
+
+
+
+
+
+
+
+/*
+new code
+*/
+#p_new_projet{
+    font-family: sans-serif;
+    font-size: 181%;
+    background-color: deepskyblue;
+}
+.new_projet {
+    display: flex;
+}
+h4 {
+    font-family: sans-serif;
+    margin-top: 3px;
+}
+span {
+    font-family: sans-serif;
+    margin: 2px;
+}
+.liste_fonctionalite {
+    padding: 20px;
+}
+
+video {
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   /*functions*/
   .openMenu{
     top: 99%;
@@ -327,7 +374,7 @@ ul {
     box-shadow: 1px 19px 41px gray;
 }
 
-li {
+.linav {
     padding: 8px;
     margin: 0;
     display: flex;
@@ -336,7 +383,7 @@ li {
     align-items: center;
 }
 
-li > a {
+.linav > a {
     text-decoration: none;
     color: black;
     font-size: 89%;
@@ -622,7 +669,7 @@ footer >i {
     }
 
 
-    li > a {
+    .linav > a {
         font-size: 150%;
     }
 
@@ -1311,6 +1358,16 @@ fa-icon.ng-fa-icon.iconfooter {
         position: absolute;
     }
 
+    .new_projet {
+        display: flex;
+        align-items: center;
+    }
+
+    video {
+        padding: 20px;
+        width: 50%;
+    }
+
 
 }
 
@@ -1503,6 +1560,16 @@ fa-icon.ng-fa-icon.iconfooter {
         height: 400px;
         border-radius: 10px;
         position: absolute;
+    }
+
+    .new_projet {
+        display: flex;
+        align-items: center;
+    }
+
+    video {
+        padding: 20px;
+        width: 52%;
     }
 
 
@@ -1700,6 +1767,16 @@ fa-icon.ng-fa-icon.iconfooter {
         position: absolute;
     }
 
+    .new_projet {
+        display: flex;
+        align-items: center;
+    }
+
+    video {
+        padding: 20px;
+        width: 52%;
+    }
+
 
 }
 
@@ -1880,6 +1957,16 @@ fa-icon.ng-fa-icon.iconfooter {
         position: absolute;
     }
 
+    .new_projet {
+        display: flex;
+        align-items: center;
+    }
+
+    video {
+        padding: 20px;
+        width: 53%;
+    }
+
 
 }
 
@@ -2046,6 +2133,16 @@ fa-icon.ng-fa-icon.iconfooter {
         top: 40%;
     }
 
+    .new_projet {
+        display: flex;
+        align-items: center;
+    }
+
+    video {
+        padding: 20px;
+        width: 100%;
+    }
+
 
     
 
@@ -2205,6 +2302,16 @@ fa-icon.ng-fa-icon.iconfooter {
         font-size: 95%;
         position: absolute;
         top: 40%;
+    }
+
+    .new_projet {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    video {
+        padding: 20px;
+        width: 100%;
     }
 
 
@@ -2369,6 +2476,17 @@ fa-icon.ng-fa-icon.iconfooter {
         font-size: 95%;
         position: absolute;
         top: 40%;
+    }
+
+
+    .new_projet {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    video {
+        padding: 20px;
+        width: 100%;
     }
 
 
@@ -2539,6 +2657,16 @@ fa-icon.ng-fa-icon.iconfooter {
         font-size: 95%;
         position: absolute;
         top: 40%;
+    }
+
+    .new_projet {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    video {
+        padding: 20px;
+        width: 100%;
     }
 
 
@@ -2720,6 +2848,16 @@ fa-icon.ng-fa-icon.iconfooter {
         top: 40%;
     }
 
+    .new_projet {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    video {
+        padding: 20px;
+        width: 100%;
+    }
+
 
 }
 
@@ -2879,6 +3017,16 @@ fa-icon.ng-fa-icon.iconfooter {
         top: 40%;
     }
 
+    .new_projet {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    video {
+        padding: 20px;
+        width: 100%;
+    }
+
 
 }
 
@@ -3033,6 +3181,16 @@ fa-icon.ng-fa-icon.iconfooter {
         top: 40%;
     }
 
+    .new_projet {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    video {
+        padding: 20px;
+        width: 100%;
+    }
+
 
 }
 
@@ -3176,6 +3334,16 @@ fa-icon.ng-fa-icon.iconfooter {
         font-size: 95%;
         position: absolute;
         top: 40%;
+    }
+
+    .new_projet {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    video {
+        padding: 20px;
+        width: 100%;
     }
 
 
@@ -3348,6 +3516,17 @@ fa-icon.ng-fa-icon.iconfooter {
         width: 281px;
     }
 
+
+    .new_projet {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    video {
+        padding: 20px;
+        width: 100%;
+    }
+
     
 }
 
@@ -3494,6 +3673,18 @@ fa-icon.ng-fa-icon.iconfooter {
         top: 40%;
     }
 
+
+
+    .new_projet {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    video {
+        padding: 20px;
+        width: 100%;
+    }
+
 }
 
 
@@ -3635,6 +3826,17 @@ fa-icon.ng-fa-icon.iconfooter {
     }
 
     
+
+
+    .new_projet {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    video {
+        padding: 20px;
+        width: 100%;
+    }
 
 
 }
